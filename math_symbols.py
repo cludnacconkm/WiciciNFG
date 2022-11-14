@@ -11,7 +11,6 @@ _MATH_SYMBOLS = {
     "daleth",
     "delta",
     "digamma",
-    "epsilon",
     "eta",
     "gamma",
     "gimel",
@@ -36,14 +35,12 @@ _MATH_SYMBOLS = {
     "varrho",
     "varsigma",
     "vartheta",
-    "xi",
     "zeta",
     "Delta",
     "Gamma",
     "Lambda",
     "Omega",
     "Phi",
-    "Pi",
     "Psi",
     "Sigma",
     "Theta",
@@ -64,7 +61,6 @@ class MathSymbolConverter:
             enabled: Whether to enable every conversion. If True, all conversion will be
                 performed. If False, the given string is returned as-is.
         """
-        self._enabled = enabled
 
     def convert(self, name: str) -> str:
         """Converts given identifier to the specified form.
